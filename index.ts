@@ -11,33 +11,33 @@ const defaults: RequestInit = {
 }
 // Thanks https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API
 
-export const httpGet = (url: string, overrides?: RequestInit) => {
-    return httpy('GET', url, overrides)
+export const httpGet = (url: string, config?: RequestInit) => {
+    return httpy('GET', url, config)
 }
 
-export const httpPost = (url: string, data: any, overrides?: RequestInit) => {
-    return httpy('POST', url, data, overrides)
+export const httpPost = (url: string, data: any, config?: RequestInit) => {
+    return httpy('POST', url, data, config)
 }
 
-export const httpPut = (url: string, data: any, overrides?: RequestInit) => {
-    return httpy('PUT', url, data, overrides)
+export const httpPut = (url: string, data: any, config?: RequestInit) => {
+    return httpy('PUT', url, data, config)
 }
 
-export const httpDelete = (url: string, overrides?: RequestInit) => {
-    return httpy('DELETE', url, overrides)
+export const httpDelete = (url: string, config?: RequestInit) => {
+    return httpy('DELETE', url, config)
 }
 
 export const httpy = async (
     type: 'GET' | 'POST' | 'PUT' | 'DELETE',
     url: string,
     data: any = {},
-    overrides?: any
+    config?: any
 ) => {
     const params = {
         ...defaults,
         method: type,
         body: type === 'POST' || type === 'PUT' ? JSON.stringify(data) : undefined,
-        ...overrides
+        ...config
     }
     console.log(params)
 
