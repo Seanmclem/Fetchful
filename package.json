@@ -1,0 +1,28 @@
+{
+  "name": "fetchy",
+  "version": "0.0.5",
+  "description": "This is an HTTP library for Javascript. It uses the Fetch API, but presents it in a way that is more similar to Axios.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Seanmclem/Fetchy.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Seanmclem/Fetchy/issues"
+  },
+  "homepage": "https://github.com/Seanmclem/Fetchy#readme",
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@rollup/plugin-babel": "^5.0.0",
+    "@rollup/plugin-typescript": "^4.1.1",
+    "rollup": "^2.7.3",
+    "rollup-plugin-terser": "^5.3.0",
+    "typescript": "^3.8.3",
+    "tslib": "^1.11.1"
+  }
+}
