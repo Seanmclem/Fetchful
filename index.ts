@@ -15,11 +15,11 @@ export const httpGet = (url: string, config?: RequestInit) => {
     return httpy('GET', url, config)
 }
 
-export const httpPost = (url: string, data: any, config?: RequestInit) => {
+export const httpPost = (url: string, data: object, config?: RequestInit) => {
     return httpy('POST', url, data, config)
 }
 
-export const httpPut = (url: string, data: any, config?: RequestInit) => {
+export const httpPut = (url: string, data: object, config?: RequestInit) => {
     return httpy('PUT', url, data, config)
 }
 
@@ -30,7 +30,7 @@ export const httpDelete = (url: string, config?: RequestInit) => {
 export const httpy = async (
     type: 'GET' | 'POST' | 'PUT' | 'DELETE',
     url: string,
-    data: any = {},
+    data: object = {},
     config?: any
 ) => {
     const params = {
