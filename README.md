@@ -4,9 +4,7 @@ This is an HTTP library for Javascript. It uses the Fetch API, but presents it i
 
 I'm sure there are many like it, but this one's mine.
 
-At this point I can drop it in to existing projects that were formally using axios, or use it in new projects without having to learn any new API. 
-
-This project uses typescript, but it should work just fine in any plain JS projects. 
+At this point I can drop it in to existing projects that were formally using axios, or use it in new projects without having to learn any new API.  
 
 ## API
 
