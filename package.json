@@ -1,5 +1,5 @@
 {
-  "name": "fetchy",
+  "name": "fetchful",
   "version": "0.0.5",
   "description": "This is an HTTP library for Javascript. It uses the Fetch API, but presents it in a way that is more similar to Axios.",
   "main": "index.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Seanmclem/Fetchy.git"
+    "url": "git+https://github.com/Seanmclem/Fetchful.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Seanmclem/Fetchy/issues"
+    "url": "https://github.com/Seanmclem/Fetchful/issues"
   },
-  "homepage": "https://github.com/Seanmclem/Fetchy#readme",
+  "homepage": "https://github.com/Seanmclem/Fetchful#readme",
   "devDependencies": {
     "@babel/core": "^7.9.0",
     "@rollup/plugin-babel": "^5.0.0",

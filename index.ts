@@ -52,7 +52,7 @@ export const httpy = async (
     try {
         return await response.json();
     } catch (e) {
-        console.error('Fetchy: Response-data is not json. Failed to parse. Returned whole response instead.')
+        console.error('Fetchful: Response-data is not json. Failed to parse. Returned whole response instead.')
         return response;
     }
 
