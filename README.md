@@ -1,4 +1,4 @@
-# Fetchy
+# Fetchful
 
 This is an HTTP library for Javascript. It uses the Fetch API, but presents it in a way that is more similar to Axios. 
 
