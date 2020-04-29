@@ -10,7 +10,7 @@ At this point I can drop it in to existing projects that were formally using axi
 
 ```
 httpGet(url: string, config?: RequestInit)
-httpPost(url: string, data: any, config?: RequestInit)
-httpPut(url: string, data: any, config?: RequestInit)
+httpPost(url: string, data: object, config?: RequestInit)
+httpPut(url: string, data: object, config?: RequestInit)
 httpDelete(url: string, config?: RequestInit)
 ```
