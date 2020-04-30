@@ -50,7 +50,11 @@ export const httpy = async (
     }
 
     try {
-        return await response.json();
+        const data = await response.json();
+        return {
+            ...response,
+            data
+        }
     } catch (e) {
         console.error('Fetchful: Response-data is not json. Failed to parse. Returned whole response instead.')
         return response;

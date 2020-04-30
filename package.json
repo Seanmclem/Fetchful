@@ -1,10 +1,12 @@
 {
   "name": "fetchful",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "This is an HTTP library for Javascript. It uses the Fetch API, but presents it in a way that is more similar to Axios.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup -c --environment production",
+    "deploy": "npm publish --access public"
   },
   "repository": {
     "type": "git",
