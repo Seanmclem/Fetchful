@@ -35,11 +35,10 @@ export const httpy = async (
 ) => {
     const params = {
         ...defaults,
+        ...config,
         method: type,
         body: type === 'POST' || type === 'PUT' ? JSON.stringify(data) : undefined,
-        ...config
     }
-    console.log(params)
 
     let response = undefined;
 
@@ -52,11 +51,13 @@ export const httpy = async (
     try {
         const data = await response.json();
         return {
-            ...response,
-            data
+            data,
+            status: response.status,
+            statusText: response.statusText,
+            //headers: Object.fromEntries(response.headers.values()), // not well supported in safari
         }
     } catch (e) {
-        console.error('Fetchful: Response-data is not json. Failed to parse. Returned whole response instead.')
+        console.error('Fetchful: Failed to parse response data.')
         return response;
     }
 
